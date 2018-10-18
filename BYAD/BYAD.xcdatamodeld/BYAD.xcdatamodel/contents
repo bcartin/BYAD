@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Blocked" representedClassName="Blocked" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BlockedBy" representedClassName="BlockedBy" syncable="YES" codeGenerationType="class">
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Requests" representedClassName="Requests" syncable="YES" codeGenerationType="class">
+        <attribute name="timeStamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="user" optional="YES" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="user"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Requests" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Blocked" positionX="-63" positionY="0" width="128" height="90"/>
+        <element name="BlockedBy" positionX="-54" positionY="27" width="128" height="60"/>
+    </elements>
 </model>

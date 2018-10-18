@@ -8,21 +8,42 @@
 
 import UIKit
 import CoreData
+import Firebase
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        UIApplication.shared.statusBarStyle = .lightContent
+        let viewController = MainController()
+        let navController = UINavigationController(rootViewController: viewController)
+        window = UIWindow()
+        window?.rootViewController = navController
+        NotificationService.shared.window = window
+        NotificationService.shared.authorize()
+        LocationServices.shared.authorize()
+        FirebaseApp.configure()
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-4709796125234322~9018211959")
+        
+
         return true
+    }
+    
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("HELLO")
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        if let userId = Auth.auth().currentUser?.uid {
+            let user = User(uid: userId)
+            user.resetBadgeCount()
+        }
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
