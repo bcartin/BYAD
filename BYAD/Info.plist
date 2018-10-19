@@ -24,6 +24,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.googleusercontent.apps.672161789427-njrutts1kl72um6s75gnjg5ko49kirau</string>
+				<string>com.googleusercontent.apps.431739763782-8b7gkk95imgr0m0sj62qg4qata4mav5k</string>
 			</array>
 		</dict>
 	</array>
@@ -31,6 +32,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app requires your location to find nearby matches. For best performance select Always Allow.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app requires your location to find nearby matches. For best performance select Always Allow.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app requires your location to find nearby matches. For best performance select Always Allow.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -39,6 +46,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -50,12 +59,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This app requires your location to find nearby matches. For best performance select Always Allow.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This app requires your location to find nearby matches. For best performance select Always Allow.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app requires your location to find nearby matches. For best performance select Always Allow.</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>

@@ -16,6 +16,7 @@
 		CB1FA4512167FF56008130D9 /* ReceivedMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA4502167FF56008130D9 /* ReceivedMessageCell.swift */; };
 		CB1FA4532167FFD2008130D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FA4522167FFD2008130D9 /* Message.swift */; };
 		CB32AF5D2159A70A0062B138 /* PersonalInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB32AF5C2159A70A0062B138 /* PersonalInfoController.swift */; };
+		CB50792621794E3B005200CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB50792521794E3B005200CA /* GoogleService-Info.plist */; };
 		CB5137B1215AD4A40084E397 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5137B0215AD4A40084E397 /* PreferencesController.swift */; };
 		CB5137B4215AEF6D0084E397 /* PhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5137B3215AEF6D0084E397 /* PhotosController.swift */; };
 		CB5137B6215BBB240084E397 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5137B5215BBB240084E397 /* AccountController.swift */; };
@@ -26,7 +27,6 @@
 		CBAD6B3D212C9ABA000D7895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD6B3B212C9ABA000D7895 /* Main.storyboard */; };
 		CBAD6B40212C9ABA000D7895 /* BYAD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBAD6B3E212C9ABA000D7895 /* BYAD.xcdatamodeld */; };
 		CBAD6B45212C9AC0000D7895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAD6B43212C9AC0000D7895 /* LaunchScreen.storyboard */; };
-		CBAD6B50212CA23A000D7895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBAD6B4F212CA23A000D7895 /* GoogleService-Info.plist */; };
 		CBAD6B53212CA3E0000D7895 /* NotificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD6B52212CA3E0000D7895 /* NotificationServices.swift */; };
 		CBAD6B56212D8FFC000D7895 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD6B55212D8FFC000D7895 /* LoginController.swift */; };
 		CBAD6B5A212D937D000D7895 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAD6B59212D937D000D7895 /* General.swift */; };
@@ -69,6 +69,7 @@
 		CB1FA4502167FF56008130D9 /* ReceivedMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedMessageCell.swift; sourceTree = "<group>"; };
 		CB1FA4522167FFD2008130D9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CB32AF5C2159A70A0062B138 /* PersonalInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoController.swift; sourceTree = "<group>"; };
+		CB50792521794E3B005200CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB5137B0215AD4A40084E397 /* PreferencesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
 		CB5137B3215AEF6D0084E397 /* PhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosController.swift; sourceTree = "<group>"; };
 		CB5137B5215BBB240084E397 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		CBAD6B44212C9AC0000D7895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBAD6B46212C9AC0000D7895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAD6B4E212CA1B5000D7895 /* BYAD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BYAD.entitlements; sourceTree = "<group>"; };
-		CBAD6B4F212CA23A000D7895 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CBAD6B52212CA3E0000D7895 /* NotificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServices.swift; sourceTree = "<group>"; };
 		CBAD6B55212D8FFC000D7895 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CBAD6B59212D937D000D7895 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 				CBAD6B3B212C9ABA000D7895 /* Main.storyboard */,
 				CBAD6B43212C9AC0000D7895 /* LaunchScreen.storyboard */,
 				CBAD6B46212C9AC0000D7895 /* Info.plist */,
-				CBAD6B4F212CA23A000D7895 /* GoogleService-Info.plist */,
+				CB50792521794E3B005200CA /* GoogleService-Info.plist */,
 				CBAD6B3E212C9ABA000D7895 /* BYAD.xcdatamodeld */,
 				CBAD6B5D212D9871000D7895 /* Assets.xcassets */,
 			);
@@ -355,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAD6B45212C9AC0000D7895 /* LaunchScreen.storyboard in Resources */,
-				CBAD6B50212CA23A000D7895 /* GoogleService-Info.plist in Resources */,
+				CB50792621794E3B005200CA /* GoogleService-Info.plist in Resources */,
 				CBAD6B5E212D9871000D7895 /* Assets.xcassets in Resources */,
 				CBAD6B3D212C9ABA000D7895 /* Main.storyboard in Resources */,
 			);
@@ -603,7 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BYAD/BYAD.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6X77VAD2DH;
 				INFOPLIST_FILE = BYAD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,6 +612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.garsontech.BYAD2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = BYADDevelopment;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -623,7 +624,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BYAD/BYAD.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6X77VAD2DH;
 				INFOPLIST_FILE = BYAD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -632,6 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.garsontech.BYAD2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = BYADAppStore;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

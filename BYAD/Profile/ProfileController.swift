@@ -110,8 +110,8 @@ class ProfileController: UIViewController, Alertable, UIScrollViewDelegate, GADB
         //Ad Banner Config
         bannerView.delegate = self
         bannerView.adSize = kGADAdSizeSmartBannerPortrait
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716" //Test
-        //        bannerView.adUnitID = "ca-app-pub-4709796125234322/1018456527"  //Prod
+//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716" //Test
+        bannerView.adUnitID = "ca-app-pub-4709796125234322/2019054959"  //Prod
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
     }
